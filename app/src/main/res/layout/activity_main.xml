@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="travel.emirates.travelbuddies.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!-- Editext for Search -->
+    <EditText android:id="@+id/inputSearchDestination"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:hint="Search Destination"
+        android:inputType="textVisiblePassword"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="384dp"
+        android:layout_height="511dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputSearchDestination"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintTop_creator="0" />
+
+</android.support.constraint.ConstraintLayout>
